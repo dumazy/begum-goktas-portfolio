@@ -25,6 +25,7 @@ const config: GatsbyConfig = {
       __key: "images",
     },
   ],
+  pathPrefix: "/begum-goktas-portfolio/",
 };
 
 export default config;
