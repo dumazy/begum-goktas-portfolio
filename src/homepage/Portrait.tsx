@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import * as styles from "./Portrait.module.scss"
+import * as styles from "./portrait.module.scss"
 
 
 
