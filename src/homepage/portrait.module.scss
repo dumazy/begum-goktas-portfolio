@@ -1,0 +1,27 @@
+.portrait {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    .bw {
+        position: absolute;
+        z-index: 0;
+    }
+    .color {
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        .color {
+            transition: all 0.5s;
+            opacity: 1;
+        }
+    }
+
+    
+    
+}
+
