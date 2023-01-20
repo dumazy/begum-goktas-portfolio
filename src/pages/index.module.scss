@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+// center child of main automatically
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  // at least a padding of 20px when the screen is small
+  
+
+}
+
+// don't stretch further than 1342x879
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  min-width: 1000px !important;
+  min-height: 800px !important;
+  width: 1342px;
+  height: 879px;
+  margin: 20px 20px;
+
+  z-index: 2;
+  border: 1px solid black;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.content {
+  z-index: 1;
+  display: flex;
+  padding: 32px 32px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .header {
+    display: flex;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 65px;
+    margin-left: 80px;
+
+    .title {
+      width: 450px;
+      height: 110px;
+    }
+    
+    .description {
+      margin-left: 40px;
+      width: 580px;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 41px;
+      font-family: Roboto, sans-serif;
+
+    }
+  }
+  
+  
+}
+
+
+
+.visuals {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  // background-color: red;
+
+  // take up all the availble space from the parent
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // align-items: stretch;
+  // align-content: stretch;
+  position: absolute;
+
+
+  .squigle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 260px;
+  }
+
+  .bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    // background-color: blue;
+    
+    
+    .stain {
+      flex: 1;
+      // hack to make svg fit
+      // margin-left: -1px;
+      margin-bottom: -5px;
+    }
+    
+    
+    // put in bottom right cornor of visuals
+    .portrait {
+      
+      width: 487px;
+      height: 681px;
+    }
+  }
+
+}
