@@ -17,7 +17,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className={ styles.main }>
 
             <div className={ styles.title }>
-              <Logo width={ 450 } />
+              <Logo />
             </div>
             <div className={ styles.description }>
               <p>Designing with the user in mind, we strive to create clean, user-friendly, visually appealing interfaces that simplify and enhance people's daily lives.</p>
