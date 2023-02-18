@@ -4,7 +4,9 @@ import Portrait from "../homepage/Portrait";
 import Logo from '../common/Logo';
 import SocialLinks from '../common/SocialLinks';
 import * as styles from './index.module.scss';
+import * as typeStyles from '../common/typography.module.scss';
 import { Squigle, Stain } from '../assets/icons';
+import { Maintenance } from '../common/Maintenance';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -20,7 +22,10 @@ const IndexPage: React.FC<PageProps> = () => {
               <Logo />
             </div>
             <div className={ styles.description }>
-              <p>Designing with the user in mind, we strive to create clean, user-friendly, visually appealing interfaces that simplify and enhance people's daily lives.</p>
+              <p className={ typeStyles.headlineMedium }>Designing with the user in mind, we strive to create clean, user-friendly, visually appealing interfaces that simplify and enhance people's daily lives.</p>
+            </div>
+            <div className={ styles.maintenance }>
+              <Maintenance />
             </div>
           </div>
           <div></div>

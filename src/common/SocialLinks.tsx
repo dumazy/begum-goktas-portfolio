@@ -1,26 +1,26 @@
 import React from 'react';
-import { FacebookIcon, InstagramIcon, MailIcon } from '../assets/icons';
+import { FacebookIcon, InstagramIcon, MailIcon, MediumIcon } from '../assets/icons';
 import * as styles from './socialLinks.module.scss';
 
-const facebookUrl = 'https://www.facebook.com/begum.goktas';
 const instagramUrl = 'https://www.instagram.com/begumgoktas/';
 const mailUrl = 'mailto:info@begumgoktas.com';
+const mediumUrl = 'https://medium.com/@begumgoktas';
 
 const SocialLinks = () => {
   return (
     <div className={ styles.links }>
-      <FacebookLink />
+      <MediumLink />
       <InstagramLink />
       <MailLink />
     </div>
   );
 };
 
-const FacebookLink = () => {
+const MediumLink = () => {
   return (
     <li>
-      <a href={ facebookUrl } target="_blank" rel="noreferrer">
-        <FacebookIcon className={ styles.icon } />
+      <a href={ mediumUrl } target="_blank" rel="noreferrer">
+        <MediumIcon className={ styles.icon } />
       </a>
     </li>
   );

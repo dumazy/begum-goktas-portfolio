@@ -1,0 +1,16 @@
+@import '../common/colors.module.scss';
+
+.maintenance {
+ 
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-style: italic;
+    text-decoration-line: underline ;
+    text-decoration-color: $primaryColor;
+    font-weight: 400;
+    line-height: 145%;
+    letter-spacing: 0em;
+    margin: 0 0 0 8px;
+  }
+}
