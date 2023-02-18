@@ -5,13 +5,14 @@ import * as styles from './socialLinks.module.scss';
 const instagramUrl = 'https://www.instagram.com/begumgoktas/';
 const mailUrl = 'mailto:info@begumgoktas.com';
 const mediumUrl = 'https://medium.com/@begumgoktas';
+const linkedInUrl = 'https://www.linkedin.com/in/begumgoktas/';
 
 const SocialLinks = () => {
   return (
     <div className={ styles.links }>
       <MediumLink />
       <InstagramLink />
-      <MailLink />
+      {/* <MailLink /> */ }
     </div>
   );
 };

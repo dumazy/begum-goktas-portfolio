@@ -32,6 +32,17 @@ const config: GatsbyConfig = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Begüm Göktaş`,
+        short_name: `BG`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        display: `standalone`,
+        icon: `src/assets/images/favicon.png`,
+      },
+    },
   ],
   pathPrefix: "/begum-goktas-portfolio/",
 };
